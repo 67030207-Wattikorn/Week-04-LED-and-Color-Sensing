@@ -78,8 +78,8 @@ void init_rgb_gpio(void)
 
     // เริ่มต้นให้ LED ทุกสีดับสนิท
     gpio_set_level(LED_R_GPIO, 0);  // ถ้า common anode ต้องแก้เป็น gpio_set_level(LED_R_GPIO, 1); 
-    gpio_set_level(LED_G_GPIO, 0);
-    gpio_set_level(LED_B_GPIO, 0);
+    gpio_set_level(LED_G_GPIO, 0);  // ถ้า common anode ต้องแก้เป็น gpio_set_level(LED_G_GPIO, 1); 
+    gpio_set_level(LED_B_GPIO, 0);  // ถ้า common anode ต้องแก้เป็น gpio_set_level(LED_B_GPIO, 1); 
 }
 
 void app_main(void)
